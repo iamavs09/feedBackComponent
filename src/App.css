@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+:root{
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+  
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background-color:black;
+}
+.card{
+  max-width: 320px;
+  min-height: 320px;
+  padding: 30px;
+  background-color: var(--VeryDarkBlue);
+  border-radius: 25px;
+}
+.star-mask{
+  background-color: var(--DarkBlue);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card h3{
+  margin: 1em 0;
+  color: var(--White);
+}
+.card p{
+  font-size: 15px;
+  color: var(--LightGrey);
+  margin: 1em 0;
+}
+.submit-btn{
+  width: 96%;
+  padding: .75em 0;
+  background-color: var(--Orange);
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  color: var(--White);
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.submit-btn:hover{
+  color: var(--Orange);
+  background-color: var(--White)
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.thankyou{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  min-height: 320px;
+  padding: 30px;
+  background-color: var(--VeryDarkBlue);
+  border-radius: 25px;
+}
+.thankyou-selection-box{
+  margin: 10px 0;
+  background-color: var(--DarkBlue);
+  padding: 5px 0;
+  border-radius: 20px;
+  width: 160px;
+
+}
+.thankyou p{
+  color: var(--LightGrey);
+  text-align: center;
+}
+.thankyou-selection-box p{
+  color: var(--Orange);
+  text-align: center;
+  font-size: 15px;
+}
+.thankyou h3{
+  color: var(--White);
+  text-align: center;
+  margin: 10px 0;
+}
+.thankyou img {
+  width: 162px;
+  height: 108px;
+  margin-inline: 40px;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+li:hover{
+  background-color: var(--Orange);
+  color: var(--White);
+}
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: var(--DarkBlue);
+  width: 40px;
+  height: 40px;
+  color: var(--LightGrey);
+  padding: 5px;
+  border-radius: 50%;
+}
